@@ -28,7 +28,7 @@ function! ctrlg#ctrlg(count)
     if !empty(name) && !filereadable(expand('%:p'))
         unsilent echon extra
         echohl Type  
-        unsilent echon (&shm =~# '[an]' ? '[New]' : '[New file]')
+        unsilent echon (&shm =~# '[an]' ? '[New]' : '[New File]')
         echohl NONE
     endif
     unsilent echon ' '
